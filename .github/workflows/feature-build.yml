@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 env:
-  GODOT_VERSION: 4.4.stable
+  GODOT_VERSION: 4.6.1
   EXPORT_NAME: SuperMarioBrosRemastered
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
           ]
     runs-on: ubuntu-22.04
     container:
-      image: ghcr.io/meldanor/godot-ci:4.4-stable-minimal
+      image: ghcr.io/abarichello/godot-ci:4.6.1
     steps:
       - name: Checkout
         uses: actions/checkout@v4
